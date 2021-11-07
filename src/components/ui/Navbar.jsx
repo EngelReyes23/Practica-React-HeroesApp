@@ -35,7 +35,7 @@ export const Navbar = () => {
 			</div>
 
 			<div className="navbar-collapse collapse w-100 order-3 dual-collapse2">
-				<ul className="navbar-nav ml-auto">
+				<div className="navbar-nav ml-auto">
 					<NavLink
 						className={(dataNavLink) =>
 							dataNavLink.isActive
@@ -46,7 +46,7 @@ export const Navbar = () => {
 					>
 						Logout
 					</NavLink>
-				</ul>
+				</div>
 			</div>
 		</nav>
 	);
