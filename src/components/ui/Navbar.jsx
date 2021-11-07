@@ -11,10 +11,8 @@ export const Navbar = () => {
 			<div className="navbar-collapse">
 				<div className="navbar-nav">
 					<NavLink
-						className={(dataNavLink) =>
-							dataNavLink.isActive
-								? "active nav-item nav-link"
-								: "nav-item nav-link"
+						className={({ isActive }) =>
+							isActive ? "active nav-item nav-link" : "nav-item nav-link"
 						}
 						to="/dashboard/marvel"
 					>
@@ -22,10 +20,8 @@ export const Navbar = () => {
 					</NavLink>
 
 					<NavLink
-						className={(dataNavLink) =>
-							dataNavLink.isActive
-								? "active nav-item nav-link"
-								: "nav-item nav-link"
+						className={({ isActive }) =>
+							isActive ? "active nav-item nav-link" : "nav-item nav-link"
 						}
 						to="/dashboard/dc"
 					>
@@ -37,10 +33,8 @@ export const Navbar = () => {
 			<div className="navbar-collapse collapse w-100 order-3 dual-collapse2">
 				<div className="navbar-nav ml-auto">
 					<NavLink
-						className={(dataNavLink) =>
-							dataNavLink.isActive
-								? "active nav-item nav-link"
-								: "nav-item nav-link"
+						className={({ isActive }) =>
+							isActive ? "active nav-item nav-link" : "nav-item nav-link"
 						}
 						to="/login"
 					>

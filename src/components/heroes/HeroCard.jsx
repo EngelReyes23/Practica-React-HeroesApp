@@ -35,7 +35,7 @@ export const HeroCard = ({
 							<small className="text-muted">{first_appearance}</small>
 						</p>
 						<Link
-							className="btn btn-primary d-block"
+							className="btn btn-primary btn-block"
 							to={`/dashboard/heroe/${id}`}
 						>
 							More...
