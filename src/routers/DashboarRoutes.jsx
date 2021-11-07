@@ -14,7 +14,7 @@ export const DashboarRoutes = () => {
 				<Routes>
 					<Route path="/marvel" element={<MarvelScreen />} />
 					<Route path="/dc" element={<DcScreen />} />
-					<Route path="heroe/:idHeroe" element={<HeroScreen />} />
+					<Route path="/heroe/:idHeroe" element={<HeroScreen />} />
 				</Routes>
 			</div>
 		</div>
