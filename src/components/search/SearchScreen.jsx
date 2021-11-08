@@ -56,7 +56,7 @@ export const SearchScreen = () => {
 					</form>
 				</div>
 				<div className="col-8">
-					<h4>Results </h4>
+					<h4>Results ( {heroesFiltered.length} )</h4>
 					{q === "" && (
 						<div className="alert alert-info">
 							<h4>Search a hero</h4>

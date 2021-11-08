@@ -16,7 +16,7 @@ const AppRouter = () => {
 					{/* Para rutas no encontradas */}
 					<Route path="*" element={<Navigate to="dashboard" />} />
 
-					<Route path="/" element={<Navigate to="dashboard" />} />
+					<Route path="/" element={<Navigate to="login" />} />
 					<Route path="/dashboard/*" element={<DashboarRoutes />} />
 					<Route path="/login" element={<LoginScreen />} />
 				</Routes>
