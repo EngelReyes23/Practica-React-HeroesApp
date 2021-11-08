@@ -14,7 +14,7 @@ const HeroScreen = () => {
 		heroe;
 
 	return (
-		<div className="row mt-5">
+		<div className="row m-5">
 			<div className="col-4">
 				<img
 					className="img-thumbnail animate__animated animate__fadeInLeft"

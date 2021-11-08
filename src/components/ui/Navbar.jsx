@@ -3,9 +3,9 @@ import { Link, NavLink } from "react-router-dom";
 
 export const Navbar = () => {
 	return (
-		<nav className="navbar navbar-expand-sm navbar-dark bg-dark">
+		<nav className="navbar navbar-expand-sm navbar-dark bg-dark p-2">
 			<Link className="navbar-brand" to="/dashboard/">
-				Asociaciones
+				HeroesApp
 			</Link>
 
 			<div className="navbar-collapse">
@@ -41,7 +41,7 @@ export const Navbar = () => {
 			</div>
 
 			<div className="navbar-collapse collapse w-100 order-3 dual-collapse2">
-				<div className="navbar-nav ml-auto">
+				<div className="navbar-nav ms-auto">
 					<NavLink
 						className={({ isActive }) =>
 							isActive ? "active nav-item nav-link" : "nav-item nav-link"
