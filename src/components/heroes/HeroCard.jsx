@@ -9,6 +9,7 @@ export const HeroCard = ({
 	first_appearance,
 	characters,
 }) => {
+	console.log("Render");
 	return (
 		<div
 			className="card mb-3 shadow animate__animated animate__fadeInDown"
