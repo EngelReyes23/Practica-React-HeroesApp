@@ -8,6 +8,7 @@ import {
 import LoginScreen from "../components/login/LoginScreen";
 import { DashboarRoutes } from "./DashboarRoutes";
 import PrivateRoute from "./PrivateRoute";
+import PublicRoute from "./PublicRoute";
 
 const AppRouter = () => {
 	return (
@@ -27,7 +28,14 @@ const AppRouter = () => {
 							</PrivateRoute>
 						}
 					/>
-					<Route path="/login" element={<LoginScreen />} />
+					<Route
+						path="/login"
+						element={
+							<PublicRoute>
+								<LoginScreen />
+							</PublicRoute>
+						}
+					/>
 				</Routes>
 			</div>
 		</Router>

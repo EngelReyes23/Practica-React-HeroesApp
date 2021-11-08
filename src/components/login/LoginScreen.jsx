@@ -9,8 +9,10 @@ const LoginScreen = () => {
 
 	const navigate = useNavigate();
 	const handleClick = () => {
+		const lastPath = localStorage.getItem("lastPath") || "/dashboard";
+
 		dispatch({ type: types.login, payload: { name: "Engel" } });
-		navigate("/dashboard", { replace: true });
+		navigate(`${lastPath}`, { replace: true });
 	};
 
 	return (
