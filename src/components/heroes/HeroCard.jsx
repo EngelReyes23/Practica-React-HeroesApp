@@ -6,7 +6,7 @@ export const HeroCard = React.memo(
 		console.log("Render");
 		return (
 			<div
-				className="card mb-3 shadow animate__animated animate__fadeInDown"
+				className="card mb-3 shadow animate__animated animate__zoomIn"
 				style={{ maxWidth: "26rem" }}
 			>
 				<div className="row g-0">

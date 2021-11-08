@@ -17,7 +17,7 @@ const HeroScreen = () => {
 		<div className="row m-5">
 			<div className="col-4">
 				<img
-					className="img-thumbnail animate__animated animate__fadeInLeft"
+					className="img-thumbnail animate__animated animate__slideInLeft"
 					src={`../../assets/heroes/${idHeroe}.jpg`}
 					alt="SuperHero"
 				/>
