@@ -2,7 +2,7 @@ import React, { useMemo } from "react";
 import { getHeroByPublisher } from "../selectors/getHeroByPublisher";
 import { HeroCard } from "./HeroCard";
 
-const HeroesList = ({ publisher }) => {
+const HeroesList = React.memo(({ publisher }) => {
 	const heroes = useMemo(() => getHeroByPublisher(publisher), [publisher]);
 
 	return (
@@ -14,6 +14,6 @@ const HeroesList = ({ publisher }) => {
 			</div>
 		</div>
 	);
-};
+});
 
 export default HeroesList;
