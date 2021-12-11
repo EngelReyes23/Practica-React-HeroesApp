@@ -1,7 +1,9 @@
 import React, { useMemo } from "react";
 import { Navigate, useParams } from "react-router";
 import { useNavigate } from "react-router-dom";
+import { heroImages } from "../../helpers/imgs";
 import { getHeroeById } from "../selectors/getHeroById";
+// import batman from "../../assets/heroes/dc-batman.jpg"; // recurso estatico
 
 const HeroScreen = () => {
 	const { idHeroe } = useParams();
@@ -18,7 +20,9 @@ const HeroScreen = () => {
 			<div className="col-4">
 				<img
 					className="img-thumbnail animate__animated animate__slideInLeft"
-					src={`../../assets/heroes/${idHeroe}.jpg`}
+					// src={`../../assets/heroes/${idHeroe}.jpg`} // From public
+					// src={batman} // from imports
+					src={heroImages(`./${idHeroe}.jpg`).default} // from require
 					alt="SuperHero"
 				/>
 			</div>

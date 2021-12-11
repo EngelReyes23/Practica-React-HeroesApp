@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { heroImages } from "../../helpers/imgs";
 
 export const HeroCard = React.memo(
 	({ id, superhero, publisher, alter_ego, first_appearance, characters }) => {
@@ -12,7 +13,8 @@ export const HeroCard = React.memo(
 				<div className="row g-0">
 					<div className="col-md-4">
 						<img
-							src={`../assets/heroes/${id}.jpg`}
+							// src={`../assets/heroes/${id}.jpg`} // from public folder
+							src={heroImages(`./${id}.jpg`).default} // from src folder
 							className="img-fluid rounded-start"
 							alt="..."
 						/>
